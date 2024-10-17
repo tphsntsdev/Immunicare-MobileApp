@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Updatespage">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="277dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="25dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/historyView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/login_page_wireframe_mobile_prototype_removebg_preview__1_" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentsView"
+        android:layout_width="365dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="293dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/bergensansbold"
+        android:text="Appointments :"
+        android:textColor="#66b2b2"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/appointmentsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/bergensansbold"
+        android:text="History :"
+        android:textColor="#66b2b2"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/historyView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/nav_design"
+        app:itemIconSize="30sp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_item">
+
+
+        <ImageButton
+            android:id="@+id/chatbot_btn"
+            android:layout_width="61dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbtnbg"
+            tools:layout_editor_absoluteX="314dp"
+            tools:layout_editor_absoluteY="715dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyView"
+        android:layout_width="356dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <RelativeLayout
+        android:id="@+id/chatBot_UI"
+        android:layout_width="319dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="125dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:fontFamily="@font/bergensansbold"
+            android:gravity="center"
+            android:text="ChatBot"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/hideChatbot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_expand_circle_down_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="479dp"
+            android:layout_marginTop="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_response"
+                android:layout_width="250dp"
+                android:layout_height="60sp"
+                android:background="@color/whitesmoke" />
+
+            <ImageButton
+                android:id="@+id/submit_message"
+                android:layout_width="61dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundedsendbtn"
+                tools:layout_editor_absoluteX="314dp"
+                tools:layout_editor_absoluteY="715dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

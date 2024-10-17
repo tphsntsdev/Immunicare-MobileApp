@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homepage"
+        android:title="Home"
+        android:icon="@drawable/baseline_assignment_24"
+        >
+    </item>
+    <item android:id="@+id/book_appointment"
+        android:title="Book"
+        android:icon="@drawable/baseline_window_24"
+        />
+    <item android:id="@+id/chatbot"
+        android:title=""
+        android:iconTint="@color/white"
+        />
+    <item android:id="@+id/account_info"
+        android:title="Account"
+        android:icon="@drawable/baseline_account_box_24"
+        />
+    <item android:id="@+id/updates_info"
+        android:title="Schedule"
+        android:icon="@drawable/baseline_notification_important_24"
+        />
+
+
+</menu>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountPage">
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="277dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="210dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/login_page_wireframe_mobile_prototype_removebg_preview__1_" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="387dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/divider"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vaccineRecyclerView"
+        android:layout_width="365dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/bergensansbold"
+        android:text="Profile : "
+        android:textColor="#66b2b2"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/bergensansbold"
+        android:text="Vaccines :"
+        android:textColor="#66b2b2"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/vaccineRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/Profilepicture"
+        android:layout_width="128dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="44dp"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.208" />
+    <ImageView
+        android:id="@+id/childProfilepicture"
+        android:layout_width="128dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="44dp"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/nav_design"
+        app:itemIconSize="30sp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_item">
+
+
+        <ImageButton
+            android:id="@+id/chatbot_btn"
+            android:layout_width="61dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbtnbg"
+            tools:layout_editor_absoluteX="314dp"
+            tools:layout_editor_absoluteY="715dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/NameText"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/bergensans"
+        android:gravity="center_vertical"
+        android:text="Input Name"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/bergensans"
+        android:gravity="center_vertical"
+        android:text="Input Email"
+        app:layout_constraintBottom_toTopOf="@+id/genderText"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/bergensans"
+        android:gravity="center_vertical"
+        android:text="Input Gender"
+        app:layout_constraintBottom_toTopOf="@+id/addressText"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/bergensans"
+        android:gravity="center_vertical"
+        android:text="Input Address"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="#66b2b2"
+        android:text="Log Out"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccineRecyclerView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addchild_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#66b2b2"
+        android:text="Add Child"
+
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toStartOf="@+id/addAllergy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccineRecyclerView" />
+
+    <Button
+        android:id="@+id/addAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="#66b2b2"
+        android:text="Allergies"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toStartOf="@+id/logoutbtn"
+        app:layout_constraintTop_toBottomOf="@+id/vaccineRecyclerView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/switchacct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="38dp"
+
+        android:backgroundTint="#66b2b2"
+        android:text="Switch"
+
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toStartOf="@+id/addAllergy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccineRecyclerView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/photobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Add Photo"
+        android:textColor="#66b2b2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/addressText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/Profilepicture"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/chatBot_UI"
+        android:layout_width="319dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="125dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:fontFamily="@font/bergensansbold"
+            android:gravity="center"
+            android:text="ChatBot"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/hideChatbot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_expand_circle_down_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="479dp"
+            android:layout_marginTop="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_response"
+                android:layout_width="250dp"
+                android:layout_height="60sp"
+                android:background="@color/whitesmoke" />
+
+            <ImageButton
+                android:id="@+id/submit_message"
+                android:layout_width="61dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundedsendbtn"
+                tools:layout_editor_absoluteX="314dp"
+                tools:layout_editor_absoluteY="715dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
