@@ -9,3 +9,11 @@ Features:
   • Appointment Scheduling: Users can book vaccination appointments directly within the app.
 
   • Vaccination Certificates: View certificates after admin verification through a separate repository.
+
+Tech Stack :
+
+• Kotlin
+
+• Gradle
+
+
